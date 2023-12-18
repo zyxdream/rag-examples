@@ -1,0 +1,12 @@
+#remove all packages and conda env 'ragenv'
+conda remove -n ragenv --all
+# create conda env with specific python version
+conda create --name ragenv python=3.8
+
+conda install -c anaconda jupyter
+pip install python-dotenv
+#openai 1.3.7  released dec1,2023
+pip install openai
+#llama-index 0.9.13
+pip install llama-index
+pip install --upgrade pymupdf
